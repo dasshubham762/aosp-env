@@ -13,4 +13,4 @@ RUN git config --global user.email "ci@ci.com"
 
 # Download repo tool
 RUN mkdir ~/.bin && curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo && chmod a+x ~/.bin/repo
-RUN echo PATH=~/.bin:$PATH >> ~/.bashrc
+RUN echo "PATH=~/.bin:$PATH" >> ~/.bashrc
